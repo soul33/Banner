@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决鼠标快速移动问题</title>
+    <script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 400px;
+            background: #ddd;
+            margin: auto;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('div').mouseenter(function(){
+                timer = setTimeout(function(){
+                    alert('ahahha');
+                },200);
+            });
+            $('div').mouseleave(function(){
+                clearTimeout(timer);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
