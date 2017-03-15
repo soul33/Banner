@@ -13,7 +13,7 @@ ul li{
 }
 #fk img{
     width: 80%;
-    height: autp;
+    height: auto;
     margin-left: 10%;
     position: absolute;
     top:0;
@@ -22,9 +22,9 @@ ul li{
 }
 #fk ul{
     position: absolute;
-    width: 108px;
+    width: 128px;
     left: 50%;
-    margin-left: -52px;
+    margin-left: -64px;
     bottom: 20px;
 }
 #fk ul li{
@@ -35,3 +35,43 @@ ul li{
     border-radius: 12px;
     margin-right: 8px;
 }
+@-webkit-keyframes runslider{
+    0% {
+    width: 12px;
+    background: #a10000;
+    }
+    /*50%{
+    width: 20px;
+    background: #a10000; 
+    }*/
+    100% {
+    width: 30px;
+    background: #a10000;
+    }
+}
+@keyframes runslider{
+    0% {
+    width: 12px;
+    background: #a10000;
+    }
+    /*50%{
+    width: 20px;
+    background: #a10000; 
+    }*/
+    100% {
+    width: 30px;
+    background: #a10000;
+    }
+}
+#fk ul li.li_run{
+    animation: runslider 0.7s 1 normal both 0s;
+    /*width: 30px;
+    background: #a10000;*/
+    -webkit-animation-name: runslider;
+    -webkit-animation-duration:0.7s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-delay: 0s; 
+}
+
